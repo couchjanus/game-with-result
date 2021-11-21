@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".ResultActivity">
+
+    <TableRow>
+        <TextView
+            android:text="@string/name"
+            android:gravity="start"/>
+        <TextView
+            android:gravity="end"
+            android:id="@+id/showName"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/email"
+            android:gravity="start"/>
+        <TextView
+            android:gravity="end"
+            android:id="@+id/showEmail"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/rating"
+            android:gravity="start"/>
+        <TextView
+            android:gravity="end"
+            android:id="@+id/showRating"/>
+    </TableRow>
+
+</TableLayout>

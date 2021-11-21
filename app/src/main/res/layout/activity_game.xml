@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/gameHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        />
+    <TextView
+        android:id="@+id/textViewLeft"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/gameHelp"
+        android:layout_alignParentStart="true"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewRight"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/gameHelp"
+        />
+
+    <Button
+        android:id="@+id/yesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRight"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="223dp"
+        android:onClick="guessYes"
+        android:text="@string/yes" />
+
+    <Button
+        android:id="@+id/noButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/yesButton"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginEnd="8dp"
+        android:layout_toLeftOf="@+id/yesButton"
+        android:onClick="guessNo"
+        android:text="@string/no" />
+
+
+
+    <Button
+        android:id="@+id/toResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="toResult"
+        android:text="@string/go_to_result" />
+
+</RelativeLayout>
